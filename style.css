@@ -35,7 +35,7 @@ section.footer-animation {
 
 #bgImage {
     position: absolute;
-    background-image: url(/images/IMG_Wall.jpg);
+    background-image: url(images/IMG_Wall.jpg);
     background-size: contain;
     height: 300px;
     width: 452px;
@@ -46,7 +46,7 @@ section.footer-animation {
 }
 .bg-image2 {
     position: absolute;
-    background-image: url(/images/IMG_Wall.jpg);
+    background-image: url(images/IMG_Wall.jpg);
     background-size: auto;
     height: 107px;
     width: 168px;
