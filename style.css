@@ -217,4 +217,11 @@ p#longText {
         width: 70px;
         top: 55%;
     }
+    p#longText {
+        font-size: 14px;
+        line-height: 1.2;
+        width: 132px;
+        right: 2px;
+        top: 70px;
+    }
   }
