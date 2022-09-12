@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+img{
+    object-fit: fill;
+}
 section.footer-animation {
     background: #921A19;
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -24,7 +26,7 @@ section.footer-animation {
     margin-right: auto;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 80px;
     background: #B22120;
     bottom: 0;
     transform: translateX(-50%);
@@ -48,7 +50,7 @@ section.footer-animation {
     position: absolute;
     background-image: url(images/IMG_Wall.jpg);
     background-size: auto;
-    height: 107px;
+    height: 120px;
     width: 168px;
     z-index: -97;
     top: 36px;
@@ -65,54 +67,49 @@ section.footer-animation {
 img#lysolImg {
     position: absolute;
     width: 70px;
-    top: 20px;
+    top: 10px;
     transition: 2s;
     left: 30px;
 }
 img#flowerImg {
     position: absolute;
     bottom: 0;
-    height: auto;
-    width: 46px;
+    width: 50px;
     left: 105px;
     z-index: 3;
     transition: 2s;
+    bottom: -3px;
 }
-
 
 img#mangoImg {
     position: absolute;
     left: 145px;
     width: 30px;
-    height: auto;
-    bottom: 0;
-    height: auto;
+    bottom: -5px;
     transition: 3s;
 }
 img#wipesMangoImg {
-    width: 62px;
+    width: 55px;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 170px;
     transition: 2s;
-    height: auto;
 }
 
 img#wipesCoconutImg {
-    width: 52px;
-    height: auto;
+    width: 47px;
     position: absolute;
-    bottom: 0;
-    left: 235px;
+    bottom: -10px;
+    left: 230px;
     transition: 2s;
     animation-duration: 1.5s;
 }
 img#coconutImg {
     position: absolute;
-    width: 60px;
+    width: 75px;
     height: auto;
     bottom: -13px;
-    left: 275px;
+    left: 260px;
     z-index: -99;
     transition: 2s;
 }
@@ -129,8 +126,11 @@ img#coconutImg {
     border-radius: 10px;
     font-size: 12px;
     transition: 2s;
+    animation-delay: 1.5s;
 }
-
+.hidden{
+    display: none;
+}
 #shortText{
     color: white;
     position: absolute;
@@ -139,6 +139,7 @@ img#coconutImg {
     right: 100px;
     transition: .8s;
     width: 150px;
+    animation-duration: 1.5s;
 }
 
 p#longText {
@@ -150,3 +151,70 @@ p#longText {
     top: 30px;
     transition: 1.5s;
 }
+
+
+@media only screen and (max-width: 425px) {
+    .animated-container{
+        width: 300px;
+    }
+    #bgImage {
+        background-size: contain;
+        height: 182px;
+        width: 445px;
+        clip-path: polygon(0 0, 51% 0%, 0% 41%, 0 41%);
+    }
+    .bg-image2{
+        display: none;
+    }
+
+    img#lysolImg {
+        width: 40px;
+        left: 10px;
+        top: 25px;
+    }
+    img#lysolImg {
+        width: 40px;
+        left: 10px;
+        top: 25px;
+    }
+    
+    img#wipesMangoImg {
+        width: 43px;
+        left: 65px;
+    }
+    
+    img#wipesCoconutImg {
+        width: 35px;
+        left: 107px;
+    }
+
+    img#flowerImg {
+        left: 20px;
+        width: 35px;
+        bottom: 0;
+    }
+    
+    img#mangoImg {
+        left: 47px;
+        width: 30px;
+    }
+    
+    img#coconutImg {
+        width: 40px;
+        bottom: -5px;
+        left: 135px;
+    }
+    
+    button#btnShopNow {
+        font-size: 8px;
+        right: 5px;
+    }
+    
+    p#shortText {
+        font-size: 12px;
+        line-height: 1;
+        right: 55px;
+        width: 70px;
+        top: 55%;
+    }
+  }
