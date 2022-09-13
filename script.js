@@ -18,7 +18,7 @@ if (window.innerWidth > 425) {
       animatedContainer.style.height = "200px";
 
       btnShopNow.style.position = "absolute";
-      btnShopNow.style.top = "60%";
+      btnShopNow.style.top = "65%";
       btnShopNow.style.right = "140px";
       btnShopNow.style.transform = "translateY(50%)";
 
